@@ -1,0 +1,14 @@
+# compiled directory
+/bin
+/obj
+/Properties
+/.config
+/.vs
+
+# debug log
+*.csproj.user
+# *.xml
+
+# local env files
+appsettings.json
+appsettings.Development.json

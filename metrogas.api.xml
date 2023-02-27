@@ -1,0 +1,2070 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>metrogas.api</name>
+    </assembly>
+    <members>
+        <member name="T:metrogas.api.Business.CMS.Plantillas">
+            <summary>
+            Clase control de datos para Plantilla
+            </summary>
+        </member>
+        <member name="T:metrogas.api.Business.CRM.Clientes">
+            <summary>
+            Clase control de datos para Cliente
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Clientes.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Se crea una instancia de la clase
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Clientes.GetTodos(System.Int32,metrogas.api.Models.CRM.Cliente)">
+            <summary>
+            Gets the todos.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="filter">The filter.</param>
+            <returns>List&lt;Cliente&gt;.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Clientes.GetRegistro(System.Int32)">
+            <summary>
+            Gets the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Cliente.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Clientes.SaveRegistro(System.Int32,metrogas.api.Models.CRM.Cliente)">
+            <summary>
+            Saves the registro.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="data">The data.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Clientes.Execute(System.Int32,System.Int32,metrogas.api.Models.CRM.Cliente)">
+            <summary>
+            Executes the specified accion.
+            </summary>
+            <param name="accion">The accion.</param>
+            <param name="opcion">The opcion.</param>
+            <param name="data">The data.</param>
+            <returns>DataSet.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Clientes.SetModel(System.Data.DataSet)">
+            <summary>
+            Sets the model.
+            </summary>
+            <param name="ds">The ds.</param>
+            <returns>List&lt;Cliente&gt;.</returns>
+        </member>
+        <member name="T:metrogas.api.Business.CRM.Contactos">
+            <summary>
+            Clase control de datos para Contacto
+            </summary>
+            <seealso cref="T:metrogas.api.Core.CoreConnection" />
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Contactos.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:metrogas.api.Business.CRM.Contactos"/> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Contactos.GetTodos(System.Int32,metrogas.api.Models.CRM.Contacto)">
+            <summary>
+            Gets the todos.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="filter">The filter.</param>
+            <returns></returns>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Contactos.GetRegistro(System.Int32)">
+            <summary>
+            Gets the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Contactos.SaveRegistro(System.Int32,metrogas.api.Models.CRM.Contacto)">
+            <summary>
+            Saves the registro.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Contactos.ActiveRegistro(System.Int32)">
+            <summary>
+            Actives the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Contactos.Execute(System.Int32,System.Int32,metrogas.api.Models.CRM.Contacto)">
+            <summary>
+            Executes the specified accion.
+            </summary>
+            <param name="accion">The accion.</param>
+            <param name="opcion">The opcion.</param>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:metrogas.api.Business.CRM.Contactos.SetModel(System.Data.DataSet)">
+            <summary>
+            Sets the model.
+            </summary>
+            <param name="ds">The ds.</param>
+            <returns></returns>
+        </member>
+        <member name="T:metrogas.api.Business.Modulos">
+            <summary>
+            Clase control de datos para Modulo
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Business.Modulos.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Se crea una instancia de la clase
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Business.Modulos.GetTodos(System.Int32,metrogas.api.Models.Modulo)">
+            <summary>
+            Gets the todos.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="filter">The filter.</param>
+            <returns>List&lt;Modulo&gt;.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Modulos.GetRegistro(System.Int32)">
+            <summary>
+            Gets the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Modulo.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Modulos.SaveRegistro(System.Int32,metrogas.api.Models.Modulo)">
+            <summary>
+            Saves the registro.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="data">The data.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Modulos.ActiveRegistro(System.Int32)">
+            <summary>
+            Actives the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Modulos.Execute(System.Int32,System.Int32,metrogas.api.Models.Modulo)">
+            <summary>
+            Executes the specified accion.
+            </summary>
+            <param name="accion">The accion.</param>
+            <param name="opcion">The opcion.</param>
+            <param name="data">The data.</param>
+            <returns>DataSet.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Modulos.SetModel(System.Data.DataSet)">
+            <summary>
+            Sets the model.
+            </summary>
+            <param name="ds">The ds.</param>
+            <returns>List&lt;Modulo&gt;.</returns>
+        </member>
+        <member name="T:metrogas.api.Business.PRM.Calles">
+            <summary>
+            Clase control de datos para Calle
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Calles.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Se crea una instancia de la clase
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Calles.GetTodos(System.Int32,metrogas.api.Models.PRM.Calle)">
+            <summary>
+            Gets the todos.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="filter">The filter.</param>
+            <returns>List&lt;Calle&gt;.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Calles.GetRegistro(System.Int32)">
+            <summary>
+            Gets the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Calle.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Calles.SaveRegistro(System.Int32,metrogas.api.Models.PRM.Calle)">
+            <summary>
+            Saves the registro.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="data">The data.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Calles.ActiveRegistro(System.Int32)">
+            <summary>
+            Actives the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Calles.Execute(System.Int32,System.Int32,metrogas.api.Models.PRM.Calle)">
+            <summary>
+            Executes the specified accion.
+            </summary>
+            <param name="accion">The accion.</param>
+            <param name="opcion">The opcion.</param>
+            <param name="data">The data.</param>
+            <returns>DataSet.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Calles.SetModel(System.Data.DataSet)">
+            <summary>
+            Sets the model.
+            </summary>
+            <param name="ds">The ds.</param>
+            <returns>List&lt;Calle&gt;.</returns>
+        </member>
+        <member name="T:metrogas.api.Business.PRM.Comunas">
+            <summary>
+            Clase control de datos para Comuna
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Comunas.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Se crea una instancia de la clase
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Comunas.GetTodos(System.Int32,metrogas.api.Models.PRM.Comuna)">
+            <summary>
+            Gets the todos.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="filter">The filter.</param>
+            <returns>List&lt;Comuna&gt;.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Comunas.GetRegistro(System.Int32)">
+            <summary>
+            Gets the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Comuna.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Comunas.SaveRegistro(System.Int32,metrogas.api.Models.PRM.Comuna)">
+            <summary>
+            Saves the registro.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="data">The data.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Comunas.ActiveRegistro(System.Int32)">
+            <summary>
+            Actives the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Comunas.Execute(System.Int32,System.Int32,metrogas.api.Models.PRM.Comuna)">
+            <summary>
+            Executes the specified accion.
+            </summary>
+            <param name="accion">The accion.</param>
+            <param name="opcion">The opcion.</param>
+            <param name="data">The data.</param>
+            <returns>DataSet.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Comunas.SetModel(System.Data.DataSet)">
+            <summary>
+            Sets the model.
+            </summary>
+            <param name="ds">The ds.</param>
+            <returns>List&lt;Comuna&gt;.</returns>
+        </member>
+        <member name="T:metrogas.api.Business.PRM.Regiones">
+            <summary>
+            Clase control de datos para Region
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Regiones.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Se crea una instancia de la clase
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Regiones.GetTodos(System.Int32,metrogas.api.Models.PRM.Region)">
+            <summary>
+            Gets the todos.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="filter">The filter.</param>
+            <returns>List&lt;Region&gt;.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Regiones.GetRegistro(System.Int32)">
+            <summary>
+            Gets the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Region.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Regiones.SaveRegistro(System.Int32,metrogas.api.Models.PRM.Region)">
+            <summary>
+            Saves the registro.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="data">The data.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Regiones.ActiveRegistro(System.Int32)">
+            <summary>
+            Actives the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Regiones.Execute(System.Int32,System.Int32,metrogas.api.Models.PRM.Region)">
+            <summary>
+            Executes the specified accion.
+            </summary>
+            <param name="accion">The accion.</param>
+            <param name="opcion">The opcion.</param>
+            <param name="data">The data.</param>
+            <returns>DataSet.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.PRM.Regiones.SetModel(System.Data.DataSet)">
+            <summary>
+            Sets the model.
+            </summary>
+            <param name="ds">The ds.</param>
+            <returns>List&lt;Region&gt;.</returns>
+        </member>
+        <member name="T:metrogas.api.Business.Roles">
+            <summary>
+            Clase control de datos para Rol
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Business.Roles.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Se crea una instancia de la clase
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Business.Roles.GetTodos(System.Int32,metrogas.api.Models.Rol)">
+            <summary>
+            Gets the todos.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="filter">The filter.</param>
+            <returns>List&lt;Rol&gt;.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Roles.GetRegistro(System.Int32)">
+            <summary>
+            Gets the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Rol.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Roles.SaveRegistro(System.Int32,metrogas.api.Models.Rol)">
+            <summary>
+            Saves the registro.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="data">The data.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Roles.ActiveRegistro(System.Int32)">
+            <summary>
+            Actives the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Roles.Execute(System.Int32,System.Int32,metrogas.api.Models.Rol)">
+            <summary>
+            Executes the specified accion.
+            </summary>
+            <param name="accion">The accion.</param>
+            <param name="opcion">The opcion.</param>
+            <param name="data">The data.</param>
+            <returns>DataSet.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Roles.ExecuteRolModule(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Executes the specified accion.
+            </summary>
+            <param name="accion">The accion.</param>
+            <param name="opcion">The opcion.</param>
+            <param name="rol">The rol.</param>
+            <param name="modulo">The modulo.</param>
+            <returns>DataSet.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Roles.SetModel(System.Data.DataSet)">
+            <summary>
+            Sets the model.
+            </summary>
+            <param name="ds">The ds.</param>
+            <returns>List&lt;Rol&gt;.</returns>
+        </member>
+        <member name="T:metrogas.api.Business.Usuarios">
+            <summary>
+            Clase control de datos para Usuario
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Business.Usuarios.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Se crea una instancia de la clase
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Business.Usuarios.GetTodos(System.Int32,metrogas.api.Models.Usuario)">
+            <summary>
+            Gets the todos.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="filter">The filter.</param>
+            <returns>List&lt;Usuario&gt;.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Usuarios.GetRegistro(System.Int32)">
+            <summary>
+            Gets the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>Usuario.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Usuarios.SaveRegistro(System.Int32,metrogas.api.Models.Usuario)">
+            <summary>
+            Saves the registro.
+            </summary>
+            <param name="opc">The opc.</param>
+            <param name="data">The data.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Usuarios.ActiveRegistro(System.Int32)">
+            <summary>
+            Actives the registro.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Usuarios.Execute(System.Int32,System.Int32,metrogas.api.Models.Usuario)">
+            <summary>
+            Executes the specified accion.
+            </summary>
+            <param name="accion">The accion.</param>
+            <param name="opcion">The opcion.</param>
+            <param name="data">The data.</param>
+            <returns>DataSet.</returns>
+        </member>
+        <member name="M:metrogas.api.Business.Usuarios.SetModel(System.Data.DataSet)">
+            <summary>
+            Sets the model.
+            </summary>
+            <param name="ds">The ds.</param>
+            <returns>List&lt;Usuario&gt;.</returns>
+        </member>
+        <member name="T:metrogas.api.Controllers.ClientesController">
+            <summary>
+            Clase controladora para API - ClientesController.
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Controllers.ClientesController._bs">
+            <summary>
+            The bs
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Controllers.ClientesController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:metrogas.api.Controllers.ClientesController" /> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Controllers.ClientesController.Get(System.String)">
+            <summary>
+            Selector general de datos - HTTP GET
+            </summary>
+            <param name="filter">The filter.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ClientesController.Get(System.Int32)">
+            <summary>
+            Selector individual de datos - HTTP GET
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ClientesController.Post(metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para creacion de nuevo registro - HTTP POST
+            </summary>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ClientesController.Put(System.Int32,metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para actualización de registro - HTTP PUT
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="T:metrogas.api.Controllers.ContactosController">
+            <summary>
+            Clase controladora para API - ClientesController.
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Controllers.ContactosController._bs">
+            <summary>
+            The bs
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Controllers.ContactosController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:metrogas.api.Controllers.ClientesController" /> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Controllers.ContactosController.Get(System.String)">
+            <summary>
+            Selector general de datos - HTTP GET
+            </summary>
+            <param name="filter">The filter.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ContactosController.Get(System.Int32)">
+            <summary>
+            Selector individual de datos - HTTP GET
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ContactosController.Post(metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para creacion de nuevo registro - HTTP POST
+            </summary>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ContactosController.Put(System.Int32,metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para actualización de registro - HTTP PUT
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ContactosController.Delete(System.Int32)">
+            <summary>
+            Metodo para actualización de vigencia de registro - HTTP DELETE
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="T:metrogas.api.Controllers.HomeController">
+            <summary>
+            Clase controladora para API - HomeController.
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Controllers.HomeController.Get">
+            <summary>
+            Selector general de datos - HTTP GET
+            </summary>
+            <param name="filter">The filter.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="T:metrogas.api.Controllers.ModulosController">
+            <summary>
+            Clase controladora para API - ModulosController.
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Controllers.ModulosController._bs">
+            <summary>
+            The bs
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Controllers.ModulosController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:metrogas.api.Controllers.ModulosController" /> class.
+            </summary>
+            <returns>UsuariosController.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ModulosController.Get(System.String)">
+            <summary>
+            Selector general de datos - HTTP GET
+            </summary>
+            <param name="filter">The filter.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ModulosController.Get(System.Int32)">
+            <summary>
+            Selector individual de datos - HTTP GET
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ModulosController.Post(metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para creacion de nuevo registro - HTTP POST
+            </summary>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ModulosController.Put(System.Int32,metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para actualización de registro - HTTP PUT
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ModulosController.Delete(System.Int32)">
+            <summary>
+            Metodo para actualización de vigencia de registro - HTTP DELETE
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="T:metrogas.api.Controllers.CallesController">
+            <summary>
+            Clase controladora para API - CallesController.
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Controllers.CallesController._bs">
+            <summary>
+            The bs
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Controllers.CallesController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:metrogas.api.Controllers.CallesController" /> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Controllers.CallesController.Get(System.String)">
+            <summary>
+            Selector general de datos - HTTP GET
+            </summary>
+            <param name="filter">The filter.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.CallesController.Get(System.Int32)">
+            <summary>
+            Selector individual de datos - HTTP GET
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.CallesController.Post(metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para creacion de nuevo registro - HTTP POST
+            </summary>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.CallesController.Put(System.Int32,metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para actualización de registro - HTTP PUT
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.CallesController.Delete(System.Int32)">
+            <summary>
+            Metodo para actualización de vigencia de registro - HTTP DELETE
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="T:metrogas.api.Controllers.ComunasController">
+            <summary>
+            Clase controladora para API - ComunasController.
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Controllers.ComunasController._bs">
+            <summary>
+            The bs
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Controllers.ComunasController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:metrogas.api.Controllers.ComunasController" /> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Controllers.ComunasController.Get(System.String)">
+            <summary>
+            Selector general de datos - HTTP GET
+            </summary>
+            <param name="filter">The filter.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ComunasController.Get(System.Int32)">
+            <summary>
+            Selector individual de datos - HTTP GET
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ComunasController.Post(metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para creacion de nuevo registro - HTTP POST
+            </summary>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ComunasController.Put(System.Int32,metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para actualización de registro - HTTP PUT
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.ComunasController.Delete(System.Int32)">
+            <summary>
+            Metodo para actualización de vigencia de registro - HTTP DELETE
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="T:metrogas.api.Controllers.RegionesController">
+            <summary>
+            Clase controladora para API - RegionesController.
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Controllers.RegionesController._bs">
+            <summary>
+            The bs
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Controllers.RegionesController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:metrogas.api.Controllers.RegionesController" /> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Controllers.RegionesController.Get(System.String)">
+            <summary>
+            Selector general de datos - HTTP GET
+            </summary>
+            <param name="filter">The filter.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.RegionesController.Get(System.Int32)">
+            <summary>
+            Selector individual de datos - HTTP GET
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.RegionesController.Post(metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para creacion de nuevo registro - HTTP POST
+            </summary>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.RegionesController.Put(System.Int32,metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para actualización de registro - HTTP PUT
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.RegionesController.Delete(System.Int32)">
+            <summary>
+            Metodo para actualización de vigencia de registro - HTTP DELETE
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="T:metrogas.api.Controllers.RolesController">
+            <summary>
+            Clase controladora para API - RolesController.
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Controllers.RolesController._bs">
+            <summary>
+            The bs
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Controllers.RolesController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:metrogas.api.Controllers.RolesController" /> class.
+            </summary>
+            <returns>UsuariosController.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.RolesController.Get(System.String)">
+            <summary>
+            Selector general de datos - HTTP GET
+            </summary>
+            <param name="filter">The filter.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.RolesController.Get(System.Int32)">
+            <summary>
+            Selector individual de datos - HTTP GET
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.RolesController.Post(metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para creacion de nuevo registro - HTTP POST
+            </summary>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.RolesController.Put(System.Int32,metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para actualización de registro - HTTP PUT
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.RolesController.Delete(System.Int32)">
+            <summary>
+            Metodo para actualización de vigencia de registro - HTTP DELETE
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="T:metrogas.api.Controllers.UsuariosController">
+            <summary>
+            Clase controladora para API - UsuariosController.
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Controllers.UsuariosController._bs">
+            <summary>
+            The bs
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Controllers.UsuariosController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:metrogas.api.Controllers.UsuariosController" /> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Controllers.UsuariosController.Get(System.String)">
+            <summary>
+            Selector general de datos - HTTP GET
+            </summary>
+            <param name="filter">The filter.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.UsuariosController.Get(System.Int32)">
+            <summary>
+            Selector individual de datos - HTTP GET
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.UsuariosController.Post(metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para creacion de nuevo registro - HTTP POST
+            </summary>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.UsuariosController.Put(System.Int32,metrogas.api.Core.CoreRequest)">
+            <summary>
+            Metodo para actualización de registro - HTTP PUT
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The value.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Controllers.UsuariosController.Delete(System.Int32)">
+            <summary>
+            Metodo para actualización de vigencia de registro - HTTP DELETE
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="T:metrogas.api.Core.CoreConnection">
+            <summary>
+            Clase que crea una conexi�n SqlClient a una base de datos SQL Server
+            </summary>
+            <example>
+              <code>
+            DataQuery q = new DataQuery(con); // "con" es la conexi�n a la base
+            q.OpenCon();
+            q.ExecuteCommand("delete from tabla");
+            q.CloseCon();
+            </code>
+            </example>
+        </member>
+        <member name="P:metrogas.api.Core.CoreConnection.ConnectionString">
+            <summary>
+            The connection
+            </summary>
+            <value>The connection string.</value>
+        </member>
+        <member name="F:metrogas.api.Core.CoreConnection.con">
+            <summary>
+            The con
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.CoreConnection.tran">
+            <summary>
+            The tran
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.CoreConnection.opened">
+            <summary>
+            The opened
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.CoreConnection.DECIMAL_PRECISION">
+            <summary>
+            The decimal precision
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.CoreConnection.DECIMAL_SCALE">
+            <summary>
+            The decimal scale
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Se crea una instancia de la clase
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.OpenCon">
+            <summary>
+            Abre la conexi�n a la base
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.OpenCon(System.Boolean)">
+            <summary>
+            Abre la conexi�n a la base
+            </summary>
+            <param name="f">if set to <c>true</c> [f].</param>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.CloseCon">
+            <summary>
+            Cierra la conexi�n a la base
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.CloseCon(System.Boolean)">
+            <summary>
+            Cierra la conexi�n a la base
+            </summary>
+            <param name="f">if set to <c>true</c> [f].</param>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.ExecuteQuery(System.String)">
+            <summary>
+            Ejecuta una consulta SQL
+            </summary>
+            <param name="sql">Instrucci�n SQL</param>
+            <returns>DataSet de resultados</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.ExecuteCommand(System.String)">
+            <summary>
+            Ejecuta un comando SQL
+            </summary>
+            <param name="sql">Instrucci�n SQL</param>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.ExecuteProcedure(System.String)">
+            <summary>
+            Ejecuta un procedimiento almacenado
+            </summary>
+            <param name="procedure">Nombre del procedimiento</param>
+            <returns>DataSet de resultados</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.ExecuteProcedure(System.String,System.Collections.Generic.List{metrogas.api.Core.DataParam},System.String)">
+            <summary>
+            Ejecuta un procedimiento almacenado y retorna el ID
+            </summary>
+            <param name="procedure">Nombre del procedimiento</param>
+            <param name="paramList">Lista de parametros</param>
+            <param name="field">Campo a retornar</param>
+            <returns>ID del registro</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.ExecuteProcedure(System.String,System.Collections.Generic.List{metrogas.api.Core.DataParam})">
+            <summary>
+            Ejecuta un procedimiento almacenado
+            </summary>
+            <param name="procedure">Nombre del procedimiento</param>
+            <param name="paramList">Lista de par�metros</param>
+            <returns>DataSet de resultados</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.ExecuteProcedure(System.String,System.Collections.Generic.List{metrogas.api.Core.DataParam},System.Int32)">
+            <summary>
+            Ejecuta un procedimiento almacenado
+            </summary>
+            <param name="procedure">Nombre del procedimiento</param>
+            <param name="paramList">Lista de par�metros</param>
+            <param name="timeout">Tiempo de espera</param>
+            <returns>DataSet de resultados</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.FillAdapter(System.Data.SqlClient.SqlCommand,System.String)">
+            <summary>
+            Fills the adapter.
+            </summary>
+            <param name="cmd">The command.</param>
+            <param name="table">The table.</param>
+            <returns>DataSet.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.GetField(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the field.
+            </summary>
+            <param name="row">The row.</param>
+            <param name="field">The field.</param>
+            <returns>System.Object.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.SetBaseModel(System.Data.DataRow,System.String)">
+            <summary>
+            Sets the base model.
+            </summary>
+            <param name="row">The row.</param>
+            <param name="field">The field.</param>
+            <returns>Models._BaseModel.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreConnection.ToDataTable``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Converts to datatable.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data">The data.</param>
+            <returns>DataTable.</returns>
+        </member>
+        <member name="T:metrogas.api.Core.DataParam">
+            <summary>
+            Clase que permite traspasar datos a un procedimiento almacenado o un webservice
+            </summary>
+            <example>
+              <code>
+            DataParam p = new DataParam("Nombre", "Juan");
+            </code>
+            </example>
+        </member>
+        <member name="T:metrogas.api.Core.DataParam.ParamType">
+            <summary>
+            Tipo de datos
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.ParamType.VARCHAR">
+            <summary>
+            The varchar
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.ParamType.CHAR">
+            <summary>
+            The character
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.ParamType.DATETIME">
+            <summary>
+            The datetime
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.ParamType.SMALLDATETIME">
+            <summary>
+            The smalldatetime
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.ParamType.INT">
+            <summary>
+            The int
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.ParamType.BIGINT">
+            <summary>
+            The bigint
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.ParamType.DECIMAL">
+            <summary>
+            The decimal
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.ParamType.BIT">
+            <summary>
+            The bit
+            </summary>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.ParamType.TINYINT">
+            <summary>
+            The tinyint
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Core.DataParam.#ctor">
+            <summary>
+            Se crea una nueva instancia del par�metro
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Core.DataParam.#ctor(System.String,System.Object)">
+            <summary>
+            Se crea una nueva instancia del par�metro
+            </summary>
+            <param name="name">Nombre del par�metro</param>
+            <param name="val">Valor del par�metro</param>
+        </member>
+        <member name="M:metrogas.api.Core.DataParam.#ctor(System.String,metrogas.api.Core.DataParam.ParamType,System.Object)">
+            <summary>
+            Se crea una nueva instancia del par�metro
+            </summary>
+            <param name="name">Nombre del par�metro</param>
+            <param name="type">Tipo del campo</param>
+            <param name="val">Valor del par�metro</param>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.name">
+            <summary>
+            The name
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Core.DataParam.Name">
+            <summary>
+            Nombre del par�metro
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.type">
+            <summary>
+            The type
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Core.DataParam.Type">
+            <summary>
+            Tipo del par�metro
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="F:metrogas.api.Core.DataParam.val">
+            <summary>
+            The value
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Core.DataParam.Value">
+            <summary>
+            Valor del par�metro
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:metrogas.api.Core.CoreController">
+            <summary>
+            Class CoreController.
+            Implements the <see cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="P:metrogas.api.Core.CoreController.Config">
+            <summary>
+            Gets or sets the configuration.
+            </summary>
+            <value>The configuration.</value>
+        </member>
+        <member name="M:metrogas.api.Core.CoreController.ProcessFilter``1(System.String)">
+            <summary>
+            Processes the filter.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data">The data.</param>
+            <returns>CoreFilter&lt;T&gt;.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreController.GetConfig(System.String)">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreController.SendMail(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Byte[]}})">
+            <summary>
+            Sends the mail.
+            </summary>
+            <param name="categoria">The categoria.</param>
+            <param name="nombre">The nombre.</param>
+            <param name="email">The email.</param>
+            <param name="asunto">The asunto.</param>
+            <param name="mensaje">The mensaje.</param>
+            <param name="adjuntos"></param>
+        </member>
+        <member name="T:metrogas.api.Core.CoreFilter`1">
+            <summary>
+            Class CoreFilter.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:metrogas.api.Core.CoreFilter`1.Mode">
+            <summary>
+            Gets or sets the mode.
+            </summary>
+            <value>The mode.</value>
+        </member>
+        <member name="P:metrogas.api.Core.CoreFilter`1.Data">
+            <summary>
+            Gets or sets the data.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="T:metrogas.api.Core.CoreRequest">
+            <summary>
+            Class CoreRequest.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Core.CoreRequest.Mode">
+            <summary>
+            Gets or sets the mode.
+            </summary>
+            <value>The mode.</value>
+        </member>
+        <member name="P:metrogas.api.Core.CoreRequest.Data">
+            <summary>
+            Gets or sets the data.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="M:metrogas.api.Core.CoreRequest.Desencriptar">
+            <summary>
+            Desencriptars this instance.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreRequest.GetObject``1">
+            <summary>
+            Gets the object.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns>T.</returns>
+        </member>
+        <member name="T:metrogas.api.Core.CoreResponse">
+            <summary>
+            Class CoreResponse.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Core.CoreResponse.StatusCode">
+            <summary>
+            Gets or sets the status code.
+            </summary>
+            <value>The status code.</value>
+        </member>
+        <member name="P:metrogas.api.Core.CoreResponse.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+            <value>The message.</value>
+        </member>
+        <member name="P:metrogas.api.Core.CoreResponse.Data">
+            <summary>
+            Gets or sets the data.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="P:metrogas.api.Core.CoreResponse.Error">
+            <summary>
+            Gets or sets the error.
+            </summary>
+            <value>The error.</value>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse.SetSuccess(System.Object)">
+            <summary>
+            Sets the success.
+            </summary>
+            <param name="data">The data.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse.SetSuccess(System.String)">
+            <summary>
+            Sets the success.
+            </summary>
+            <param name="mensaje">The mensaje.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse.SetSuccess(System.Object,System.String)">
+            <summary>
+            Sets the success.
+            </summary>
+            <param name="data">The data.</param>
+            <param name="mensaje">The mensaje.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse.SetNotFound">
+            <summary>
+            Sets the not found.
+            </summary>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse.SetError(System.String)">
+            <summary>
+            Sets the error.
+            </summary>
+            <param name="mensaje">The mensaje.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse.SetError(System.Exception)">
+            <summary>
+            Sets the error.
+            </summary>
+            <param name="ex">The ex.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse.SetError(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)">
+            <summary>
+            Sets the error.
+            </summary>
+            <param name="ex">The ex.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="T:metrogas.api.Core.CoreResponse2`1">
+            <summary>
+            Class CoreResponse.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Core.CoreResponse2`1.StatusCode">
+            <summary>
+            Gets or sets the status code.
+            </summary>
+            <value>The status code.</value>
+        </member>
+        <member name="P:metrogas.api.Core.CoreResponse2`1.Message">
+            <summary>
+            Gets or sets the message.
+            </summary>
+            <value>The message.</value>
+        </member>
+        <member name="P:metrogas.api.Core.CoreResponse2`1.Data">
+            <summary>
+            Gets or sets the data.
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="P:metrogas.api.Core.CoreResponse2`1.Error">
+            <summary>
+            Gets or sets the error.
+            </summary>
+            <value>The error.</value>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse2`1.SetSuccess``1(System.Collections.Generic.List{``0})">
+            <summary>
+            Sets the success.
+            </summary>
+            <param name="data">The data.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse2`1.SetSuccess(System.String)">
+            <summary>
+            Sets the success.
+            </summary>
+            <param name="mensaje">The mensaje.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse2`1.SetSuccess``1(System.Collections.Generic.List{``0},System.String)">
+            <summary>
+            Sets the success.
+            </summary>
+            <param name="data">The data.</param>
+            <param name="mensaje">The mensaje.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse2`1.SetNotFound">
+            <summary>
+            Sets the not found.
+            </summary>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse2`1.SetError(System.String)">
+            <summary>
+            Sets the error.
+            </summary>
+            <param name="mensaje">The mensaje.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse2`1.SetError(System.Exception)">
+            <summary>
+            Sets the error.
+            </summary>
+            <param name="ex">The ex.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="M:metrogas.api.Core.CoreResponse2`1.SetError(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)">
+            <summary>
+            Sets the error.
+            </summary>
+            <param name="ex">The ex.</param>
+            <returns>CoreResponse.</returns>
+        </member>
+        <member name="T:metrogas.api.Core.ValidateExtensions">
+            <summary>
+            Class ValidateExtensions.
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Core.ValidateExtensions.ValidaBasico(System.Object,System.Boolean,System.String)">
+            <summary>
+            Validas the basico.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="nulos">if set to <c>true</c> [nulos].</param>
+            <param name="campo">The campo.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:metrogas.api.Core.ValidateExtensions.ValidateInt32(System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Validates the int32.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="nulos">if set to <c>true</c> [nulos].</param>
+            <param name="campo">The campo.</param>
+            <param name="minimo">The minimo.</param>
+            <param name="maximo">The maximo.</param>
+            <returns>System.Nullable&lt;System.Int32&gt;.</returns>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:metrogas.api.Core.ValidateExtensions.ValidateString(System.Object,System.Boolean,System.String,System.Int32)">
+            <summary>
+            Validates the string.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="nulos">if set to <c>true</c> [nulos].</param>
+            <param name="campo">The campo.</param>
+            <param name="maximo">The maximo.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:metrogas.api.Core.ValidateExtensions.ValidateDecimal(System.Object,System.Boolean,System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal})">
+            <summary>
+            Validates the decimal.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="nulos">if set to <c>true</c> [nulos].</param>
+            <param name="campo">The campo.</param>
+            <param name="minimo">The minimo.</param>
+            <param name="maximo">The maximo.</param>
+            <returns>System.Nullable&lt;System.Decimal&gt;.</returns>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:metrogas.api.Core.ValidateExtensions.ValidateDateTime(System.Object,System.Boolean,System.String)">
+            <summary>
+            Validates the date time.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="nulos">if set to <c>true</c> [nulos].</param>
+            <param name="campo">The campo.</param>
+            <returns>System.Nullable&lt;DateTime&gt;.</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:metrogas.api.Core.ValidateExtensions.ValidateBoolean(System.Object,System.Boolean,System.String)">
+            <summary>
+            Validates the boolean.
+            </summary>
+            <param name="valor">The valor.</param>
+            <param name="nulos">if set to <c>true</c> [nulos].</param>
+            <param name="campo">The campo.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:metrogas.api.Core.ValidateExtensions.ExceptionMessage(System.Exception)">
+            <summary>
+            Exceptions the message.
+            </summary>
+            <param name="ex">The ex.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:metrogas.api.Models.CMS.Plantilla">
+            <summary>
+            Class Plantilla.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Models.CMS.Plantilla.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CMS.Plantilla.Tipo">
+            <summary>
+            Gets or sets the tipo.
+            </summary>
+            <value>
+            The tipo.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CMS.Plantilla.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>
+            The nombre.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CMS.Plantilla.Asunto">
+            <summary>
+            Gets or sets the asunto.
+            </summary>
+            <value>
+            The asunto.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CMS.Plantilla.Contenido">
+            <summary>
+            Gets or sets the contenido.
+            </summary>
+            <value>
+            The contenido.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CMS.Plantilla.Categoria">
+            <summary>
+            Gets or sets the categoria.
+            </summary>
+            <value>
+            The categoria.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CMS.Plantilla.Activo">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:metrogas.api.Models.CMS.Plantilla"/> is activo.
+            </summary>
+            <value>
+              <c>true</c> if activo; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CMS.Plantilla.Campos">
+            <summary>
+            Gets or sets the campos.
+            </summary>
+            <value>
+            The campos.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CMS.Plantilla.Destino">
+            <summary>
+            Gets or sets the destino.
+            </summary>
+            <value>
+            The destino.
+            </value>
+        </member>
+        <member name="T:metrogas.api.Models.CRM.Cliente">
+            <summary>
+            Class Cliente.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Ic">
+            <summary>
+            Gets or sets the ic.
+            </summary>
+            <value>The ic.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Rut">
+            <summary>
+            Gets or sets the rut.
+            </summary>
+            <value>The rut.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>The nombre.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Paterno">
+            <summary>
+            Gets or sets the paterno.
+            </summary>
+            <value>The paterno.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Materno">
+            <summary>
+            Gets or sets the materno.
+            </summary>
+            <value>The materno.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Telefono">
+            <summary>
+            Gets or sets the telefono.
+            </summary>
+            <value>The telefono.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Email">
+            <summary>
+            Gets or sets the email.
+            </summary>
+            <value>The email.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Calle">
+            <summary>
+            Gets or sets the calle identifier.
+            </summary>
+            <value>The calle identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Numero">
+            <summary>
+            Gets or sets the numero.
+            </summary>
+            <value>The numero.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Complemento">
+            <summary>
+            Gets or sets the complemento.
+            </summary>
+            <value>The complemento.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Casa">
+            <summary>
+            Gets or sets the complemento.
+            </summary>
+            <value>The complemento.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Block">
+            <summary>
+            Gets or sets the block.
+            </summary>
+            <value>The block.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Adicional">
+            <summary>
+            Gets or sets the adicional.
+            </summary>
+            <value>The adicional.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Lista">
+            <summary>
+            Gets or sets the lista.
+            </summary>
+            <value>The lista.</value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Cliente.Campanha">
+            <summary>
+            Gets or sets the campanha.
+            </summary>
+            <value>The campanha.</value>
+        </member>
+        <member name="T:metrogas.api.Models.CRM.Contacto">
+            <summary>
+            Class Noticia.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Contacto.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Contacto.Fecha">
+            <summary>
+            Gets or sets the fecha.
+            </summary>
+            <value>
+            The fecha.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Contacto.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>
+            The nombre.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Contacto.Telefono">
+            <summary>
+            Gets or sets the telefono.
+            </summary>
+            <value>
+            The telefono.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Contacto.Correo">
+            <summary>
+            Gets or sets the correo.
+            </summary>
+            <value>
+            The correo.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Contacto.Atributos">
+            <summary>
+            Gets or sets the atributos.
+            </summary>
+            <value>
+            The atributos.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Contacto.Estado">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:metrogas.api.Models.CRM.Contacto" /> is estado.
+            </summary>
+            <value>
+              <c>true</c> if estado; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:metrogas.api.Models.CRM.Contacto.Plantilla_id">
+            <summary>
+            Gets or sets the plantilla identifier.
+            </summary>
+            <value>
+            The plantilla identifier.
+            </value>
+        </member>
+        <member name="T:metrogas.api.Models.Modulo">
+            <summary>
+            Class Modulo.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Models.Modulo.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Modulo.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>The nombre.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Modulo.Titulo">
+            <summary>
+            Gets or sets the titulo.
+            </summary>
+            <value>The titulo.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Modulo.Icono">
+            <summary>
+            Gets or sets the icono.
+            </summary>
+            <value>The icono.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Modulo.Url">
+            <summary>
+            Gets or sets the URL.
+            </summary>
+            <value>The URL.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Modulo.Padre">
+            <summary>
+            Gets or sets the padre.
+            </summary>
+            <value>The padre.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Modulo.Activo">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:metrogas.api.Models.Modulo" /> is activo.
+            </summary>
+            <value><c>true</c> if activo; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Modulo.Roles">
+            <summary>
+            Gets or sets the roles.
+            </summary>
+            <value>The roles.</value>
+        </member>
+        <member name="T:metrogas.api.Models.PRM.Calle">
+            <summary>
+            Class Calle.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Calle.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Calle.Comuna">
+            <summary>
+            Gets or sets the comuna identifier.
+            </summary>
+            <value>The comuna identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Calle.Region">
+            <summary>
+            Gets or sets the region identifier.
+            </summary>
+            <value>The comuna identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Calle.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>The nombre.</value>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Calle.Activo">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:metrogas.api.Models.PRM.Calle" /> is activo.
+            </summary>
+            <value><c>true</c> if activo; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Calle.Adicional">
+            <summary>
+            Gets or sets the adicional.
+            </summary>
+            <value>The adicional.</value>
+        </member>
+        <member name="T:metrogas.api.Models.PRM.Comuna">
+            <summary>
+            Class Comuna.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Comuna.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Comuna.Region">
+            <summary>
+            Gets or sets the region identifier.
+            </summary>
+            <value>The region identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Comuna.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>The nombre.</value>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Comuna.Activo">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:metrogas.api.Models.PRM.Comuna" /> is activo.
+            </summary>
+            <value><c>true</c> if activo; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:metrogas.api.Models.PRM.Region">
+            <summary>
+            Class Region.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Region.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Region.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>The nombre.</value>
+        </member>
+        <member name="P:metrogas.api.Models.PRM.Region.Activo">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:metrogas.api.Models.PRM.Region" /> is activo.
+            </summary>
+            <value><c>true</c> if activo; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:metrogas.api.Models.Rol">
+            <summary>
+            Class Rol.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Models.Rol.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Rol.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>The nombre.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Rol.Activo">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:metrogas.api.Models.Rol" /> is activo.
+            </summary>
+            <value><c>true</c> if activo; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Rol.Modulos">
+            <summary>
+            Gets or sets the modulos.
+            </summary>
+            <value>The modulos.</value>
+        </member>
+        <member name="T:metrogas.api.Models.Usuario">
+            <summary>
+            Class Usuario.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Models.Usuario.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Usuario.Username">
+            <summary>
+            Gets or sets the username.
+            </summary>
+            <value>The username.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Usuario.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>The nombre.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Usuario.Apellido">
+            <summary>
+            Gets or sets the apellido.
+            </summary>
+            <value>The apellido.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Usuario.Telefono">
+            <summary>
+            Gets or sets the telefono.
+            </summary>
+            <value>The telefono.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Usuario.Email">
+            <summary>
+            Gets or sets the email.
+            </summary>
+            <value>The email.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Usuario.Cargo">
+            <summary>
+            Gets or sets the cargo.
+            </summary>
+            <value>The cargo.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Usuario.Rol">
+            <summary>
+            Gets or sets the rol identifier.
+            </summary>
+            <value>The rol identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Usuario.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+            <value>The password.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Usuario.Acceso">
+            <summary>
+            Gets or sets the acceso.
+            </summary>
+            <value>The acceso.</value>
+        </member>
+        <member name="P:metrogas.api.Models.Usuario.Activo">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:metrogas.api.Models.Usuario" /> is activo.
+            </summary>
+            <value><c>true</c> if activo; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:metrogas.api.Models._BaseModel">
+            <summary>
+            Class _BaseModel.
+            </summary>
+        </member>
+        <member name="P:metrogas.api.Models._BaseModel.Id">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>The identifier.</value>
+        </member>
+        <member name="P:metrogas.api.Models._BaseModel.Nombre">
+            <summary>
+            Gets or sets the nombre.
+            </summary>
+            <value>The nombre.</value>
+        </member>
+        <member name="T:metrogas.api.Pages.IndexModel">
+            <summary>
+            Class IndexModel.
+            Implements the <see cref="T:Microsoft.AspNetCore.Mvc.RazorPages.PageModel" />
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.RazorPages.PageModel" />
+        </member>
+        <member name="F:metrogas.api.Pages.IndexModel._logger">
+            <summary>
+            The logger
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Pages.IndexModel.#ctor(Microsoft.Extensions.Logging.ILogger{metrogas.api.Pages.IndexModel})">
+            <summary>
+            Initializes a new instance of the <see cref="T:metrogas.api.Pages.IndexModel" /> class.
+            </summary>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:metrogas.api.Pages.IndexModel.OnGet">
+            <summary>
+            Called when [get].
+            </summary>
+        </member>
+        <member name="T:metrogas.api.Program">
+            <summary>
+            Class Program.
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:metrogas.api.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Creates the host builder.
+            </summary>
+            <param name="args">The arguments.</param>
+            <returns>IHostBuilder.</returns>
+        </member>
+        <member name="T:metrogas.api.Startup">
+            <summary>
+            Class Startup.
+            </summary>
+        </member>
+        <member name="M:metrogas.api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:metrogas.api.Startup" /> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="P:metrogas.api.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>The configuration.</value>
+        </member>
+        <member name="M:metrogas.api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the services.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:metrogas.api.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configures the specified application.
+            </summary>
+            <param name="app">The application.</param>
+            <param name="env">The env.</param>
+        </member>
+    </members>
+</doc>
